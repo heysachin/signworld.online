@@ -35,7 +35,9 @@
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
 
+<link href="stylesheets/metro-panel.css" rel="stylesheet">
 <link href="stylesheets/style.css" rel="stylesheet">
+<link type="text/css" media="screen" rel="stylesheet" href="stylesheets/awwwards.css">
 
 
 <script src="javascripts/modernizr.custom.menu.js"></script>
@@ -43,18 +45,163 @@
 <script src="javascripts/modernizr.custom.services.js"></script>
 
 
+<!--[if lt IE 9]>
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <link href="stylesheets/ie8.css" rel="stylesheet">
+<![endif]-->
 
 </head>
 
 
-<body>
+<body style="overflow-y: auto;">
+<div id="awwwards" class="left black">
+<a href="#" target="_blank">best websites of the world</a>
+</div>
 
+
+<!-- Preloader -->
+<div id="preloader" style="display: none;">
+  <div id="status" style="display: none;">&nbsp;</div>
+</div>
+
+
+
+<!-- Mobile Only Navigation - 2 types each for small device screens -->
+<!-- Sliding Navigation : starts -->
+<nav class="menu visible-xs" id="sm">
+  <div class="sm-wrap">
+    <h1 class="sm-logo">next</h1>
+    <i class="icon-remove menu-close"></i>
+    <a class="scroll-link" data-soffset="0" href="#intro">Home</a>
+    <a class="scroll-link" data-soffset="0" href="#about">About</a>
+    <a class="scroll-link" data-soffset="0" href="#portfolio">Portfolio</a>
+    <a class="scroll-link" data-soffset="0" href="#services">Services</a>
+    <a class="scroll-link" data-soffset="0" href="#contact">Contact</a>
+    <a href="#">Profile Page</a>
+    <a href="#">Project Page</a>
+  </div>
+  <!-- Navigation Trigger Button -->
+  <div id="sm-trigger"></div>
+</nav>
+<!-- Sliding Navigation : ends -->
+
+<section id="mastwrap" class="sliding">
+ 
+
+<div id="sidebar-nav" class="sq-side-menu hidden-xs">
+    <ul>
+      <!-- Starting : Nav Block -->
+      <li class="next-bg-one" style="height: 125.714px;">
+        <a class="scroll-link sq-active" id="home-link" href="#home" data-soffset="0">
+          <div class="first">
+            <div class="arrow-right"></div>
+            <div class="content"><img alt="" title="" src="images/icons/00@2x.png" width="60" height="60"></div>
+          </div>
+          <div class="second">
+            <div class="arrow-left"></div>
+            <div class="content">Home</div>
+          </div>
+        </a>
+      </li>
+      <!-- Ending : Nav Block -->
+      
+      <!-- Starting : Nav Block -->
+      <li class="next-bg-two" style="height: 125.714px;">
+         <a class="scroll-link" id="about-link" href="#about" data-soffset="0">
+          <div class="first">
+            <div class="arrow-right"></div>
+            <div class="content"><img alt="" title="" src="images/icons/01@2x.png" width="60" height="60"></div>
+          </div>
+          <div class="second">
+            <div class="arrow-left"></div>
+            <div class="content">About</div>
+          </div>
+        </a>
+      </li>
+     <!-- Ending : Nav Block -->
+      
+      <!-- Starting : Nav Block -->
+      <li class="next-bg-four" style="height: 125.714px;">
+        <a class="scroll-link" id="portfolio-link" href="#portfolio" data-soffset="0">
+          <div class="first">
+            <div class="arrow-right"></div>
+            <div class="content"><img alt="" title="" src="images/icons/06@2x.png" width="60" height="60"></div>
+          </div>
+          <div class="second">
+            <div class="arrow-left"></div>
+            <div class="content">Portfolio</div>
+          </div>
+        </a>
+      </li>
+      <!-- Ending : Nav Block -->
+      
+      <!-- Starting : Nav Block -->
+      <li class="next-bg-three" style="height: 125.714px;">
+        <a class="scroll-link" id="services-link" href="#services" data-soffset="0">
+          <div class="first">
+            <div class="arrow-right"></div>
+            <div class="content"><img alt="" title="" src="images/icons/03@2x.png" width="60" height="60"></div>
+          </div>
+          <div class="second">
+            <div class="arrow-left"></div>
+            <div class="content">Services</div>
+          </div>
+        </a>
+      </li>
+      <!-- Ending : Nav Block -->
+      
+      <!-- Starting : Nav Block -->
+      <li class="next-bg-six" style="height: 125.714px;">
+       <a class="scroll-link" id="contact-link" href="#contact" data-soffset="0">
+          <div class="first">
+            <div class="arrow-right"></div>
+            <div class="content"><img alt="" title="" src="images/icons/05@2x.png" width="60" height="60"></div>
+          </div>
+          <div class="second">
+            <div class="arrow-left"></div>
+            <div class="content">Contact</div>
+          </div>
+        </a>
+      </li>
+      <!-- Ending : Nav Block -->
+      
+      <!-- Starting : Nav Block -->
+      <li class="next-bg-five" style="height: 125.714px;">
+        <a id="project-link" href="#" data-soffset="0">
+          <div class="first">
+            <div class="arrow-right"></div>
+            <div class="content"><img alt="" title="" src="images/icons/02@2x.png" width="60" height="60"></div>
+          </div>
+          <div class="second">
+            <div class="arrow-left"></div>
+            <div class="content">Project</div>
+          </div>
+        </a>
+      </li>
+      <!-- Ending : Nav Block -->
+      
+      <!-- Starting : Nav Block -->
+      <li class="next-bg-eight" style="height: 125.714px;">
+        <a id="profile-link" href="#" data-soffset="0">
+          <div class="first">
+            <div class="arrow-right"></div>
+            <div class="content"><img alt="" title="" src="images/icons/04@2x.png" width="60" height="60"></div>
+          </div>
+          <div class="second">
+            <div class="arrow-left"></div>
+            <div class="content">Profile</div>
+          </div>
+        </a>
+      </li>
+      <!-- Ending : Nav Block -->
+     
+    </ul>
+    <!-- end sq-side-menu ul -->
+  </div>
   <!-- end sq-side-menu -->
 
 
-<div id="logo" class="hidden-xs"><img alt="" title="" src="images/logo.png"/></div>
+<div id="logo" class="hidden-xs"><img alt="" title="" src="images/icons/logo@2x.png" width="125" height="125"></div>
 
 
 <!-- HEADER : STARTS -->

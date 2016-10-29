@@ -36,7 +36,7 @@ $(function ($) {
               modpath: './twitter/',
               count: 5,
               loading_text: 'loading twitter feed flame...',
-              username:'TheShipaShetty'
+              username:'designovastudio'
               /* etc... */
           });
         }); 
@@ -46,7 +46,7 @@ $(function ($) {
   $('#flickr').jflickrfeed({
     limit: 12, //Number of images to be displayed
     qstrings: {
-      id: '145579395@N03'//Change this to any Flickr Set ID as you prefer.
+      id: '36587311@N08'//Change this to any Flickr Set ID as you prefer.
     },
     itemTemplate: '<div class="flickr-thumb flickr-photo"><a href="{{image_b}}" target="_blank"><img class="img-responsive" src="{{image_m}}" alt="{{title}}" /></a></div>'
   });
@@ -89,7 +89,7 @@ $('.carousel').carousel({
 
     //Parallax Init
     $(window).stellar({
-        responsive: false,
+        responsive: true,
         horizontalScrolling: false,
         parallaxBackgrounds: true,
         parallaxElements: true,
