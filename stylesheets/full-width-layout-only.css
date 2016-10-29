@@ -121,19 +121,72 @@ font-size: 130px;
    	margin-left: 35px;
    }
 }
-@media (max-width: 768px) {
+
+@media (max-width: 1024px) {
+         .page-heading, .page-heading-alt{
+        font-size: 56px;
+        line-height: 63px;
+    }
     #news_ticker a{
-    	font-size: 96px;
+        font-size: 96px;
+    }
+    #news_ticker a{
+        font-size: 96px;
+    }
+    #mast-nav li > a{
+        font-size: 12px;
     }
 }
-@media (max-width: 760px) {
-    #standard-nav{
-    	display: none;
+@media (max-width: 960px) {
+         .page-heading, .page-heading-alt{
+        font-size: 56px;
+        line-height: 63px;
+    }
+    #news_ticker a{
+        font-size: 96px;
+    }
+    #news_ticker a{
+        font-size: 96px;
+    }
+    #mast-nav li > a{
+        font-size: 12px;
+    }
+}
+@media (max-width: 800px) {
+         .page-heading, .page-heading-alt{
+        font-size: 56px;
+        line-height: 63px;
+    }
+    #news_ticker a{
+        font-size: 96px;
+    }
+    #news_ticker a{
+        font-size: 96px;
+    }
+    #mast-nav li > a{
+        font-size: 12px;
+    }
+}
+@media (max-width: 768px) {
+         .page-heading, .page-heading-alt{
+        font-size: 56px;
+        line-height: 63px;
     }
     #news_ticker a{
     	font-size: 96px;
     }
+    #news_ticker a{
+    	font-size: 96px;
+    }
+    #mast-nav li > a{
+        font-size: 12px;
+    }
+}
 @media (max-width: 640px) {
+         .page-heading, .page-heading-alt{
+        font-size: 42px;
+        line-height: 49px;
+    }
     #standard-nav{
     	display: none;
     }
@@ -141,7 +194,24 @@ font-size: 130px;
     	font-size: 72px;
     }
 }
+
+@media (max-width: 600px) {
+         .page-heading, .page-heading-alt{
+        font-size: 42px;
+        line-height: 49px;
+    }
+    #standard-nav{
+        display: none;
+    }
+    #news_ticker a{
+        font-size: 64px;
+    }
+}
 @media (max-width:480px) {
+     .page-heading, .page-heading-alt{
+        font-size: 36px;
+        line-height: 43px;
+    }
     #standard-nav{
     	display: none;
     }
@@ -149,11 +219,27 @@ font-size: 130px;
     	font-size: 64px;
     }
 }
-@media (max-width:360px) {
+@media (max-width:360px) {    
+    .page-heading, .page-heading-alt{
+        font-size: 24px;
+        line-height: 31px;
+    }
     #standard-nav{
     	display: none;
     }
     #news_ticker a{
     	font-size: 48px;
+    }
+}
+@media (max-width:320px) {    
+    .page-heading, .page-heading-alt{
+        font-size: 24px;
+        line-height: 31px;
+    }
+    #standard-nav{
+        display: none;
+    }
+    #news_ticker a{
+        font-size: 36px;
     }
 }

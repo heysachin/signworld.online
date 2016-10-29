@@ -1281,28 +1281,28 @@ fieldset h1 {
    
     /*High resolution BG images on parallax layers*/
     #home {
-        background: url('../images/bg/01@2x.jpg') center center repeat;
+        background: url('http://www.designova.net/next/images/bg/01@2x.jpg') center center repeat;
         background-size: cover;
     }
 
     #about {
-        background: url('../images/bg/02@2x.jpg') center center repeat;
+        background: url('http://www.designova.net/next/images/bg/02@2x.jpg') center center repeat;
         background-size: cover;
     }
 
     #team {
-        background: url('../images/bg/03@2x.jpg') center center repeat;
+        background: url('http://www.designova.net/next/images/bg/03@2x.jpg') center center repeat;
         background-size: cover;
     }
 
     #portfolio {
-        background: url('../images/bg/04@2x.jpg') center center repeat;
+        background: url('http://www.designova.net/next/images/bg/04@2x.jpg') center center repeat;
         background-size: cover;
         padding-bottom: 149px;
     }
 
     #contact {
-        background: url('../images/bg/05@2x.jpg') center center repeat;
+        background: url('http://www.designova.net/next/images/bg/05@2x.jpg') center center repeat;
         background-size: cover;
     }
 

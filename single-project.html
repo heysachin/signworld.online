@@ -7,21 +7,20 @@
 <meta name="description" content="next by Designova - An easy to use Personal Portfolio - Retina Ready and Responsive HTML5 theme">
 <meta name="author" content="Designova">
 
-<link rel="shortcut icon" href="assets/ico/favicon.ico">
+<link rel="shortcut icon" href="http://www.designova.net/next/assets/ico/favicon.ico">
 <!-- Standard iPhone Touch Icon--> 
-<link rel="apple-touch-icon" sizes="57x57" href="assets/ico/apple-touch-icon-57-precomposed" />
+<link rel="apple-touch-icon" sizes="57x57" href="http://www.designova.net/next/assets/ico/apple-touch-icon-57-precomposed" />
 <!-- Retina iPhone Touch Icon--> 
-<link rel="apple-touch-icon" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed" />
+<link rel="apple-touch-icon" sizes="114x114" href="http://www.designova.net/next/assets/ico/apple-touch-icon-114-precomposed" />
 <!-- Standard iPad Touch Icon--> 
-<link rel="apple-touch-icon" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed" />
+<link rel="apple-touch-icon" sizes="72x72" href="http://www.designova.net/next/assets/ico/apple-touch-icon-72-precomposed" />
 <!-- Retina iPad Touch Icon--> 
-<link rel="apple-touch-icon" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed" />
+<link rel="apple-touch-icon" sizes="144x144" href="http://www.designova.net/next/assets/ico/apple-touch-icon-144-precomposed" />
 
-<link href="assets/css/bootstrap.css" rel="stylesheet">
-<link href="assets/css/bootstrap-theme.css" rel="stylesheet">
-<link href="assets/css/extension.css" rel="stylesheet">
-<link href="assets/css/typography.css" rel="stylesheet">
-<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+<link href="http://www.designova.net/next/assets/css/bootstrap.css" rel="stylesheet">
+<link href="http://www.designova.net/next/assets/css/bootstrap-theme.css" rel="stylesheet">
+<link href="http://www.designova.net/next/assets/css/extension.css" rel="stylesheet">
+<link href="http://www.designova.net/next/assets/css/typography.css" rel="stylesheet">
 <link href="stylesheets/responsive-nav.css" rel="stylesheet">
 <link href="stylesheets/prettyPhoto.css" rel="stylesheet"/>
 <link href="stylesheets/jquery.tweet.css" rel="stylesheet"/>
@@ -32,13 +31,14 @@
 <link href="stylesheets/effects.css" rel="stylesheet">
 <link href="stylesheets/jquery.easy-pie-chart.css" rel="stylesheet">
 <link href="stylesheets/sidemenu.css" rel="stylesheet">
+<link href="stylesheets/slidingmenu.css" rel="stylesheet">
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
 
+<link href="stylesheets/metro-panel.css" rel="stylesheet">
 <link href="stylesheets/style.css" rel="stylesheet">
 
 
-<script src="javascripts/modernizr.custom.js"></script>
 <script src="javascripts/modernizr.custom.menu.js"></script>
 <script src="javascripts/modernizr.custom.quotes.js"></script>
 <script src="javascripts/modernizr.custom.services.js"></script>
@@ -49,27 +49,41 @@
 <![endif]-->
 </head>
 
-
 <body>
 
 
+<!-- Preloader -->
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
 
 
 
-<!-- Mobile Only Navigation - 2 types each for (480px to 640px) and (640px to 960px) wide device screens -->
-<header id="mobile-header" class="visible-xs">
-    <div id="nav">
-      <ul class="clearfix">
-        <li><a href="index.html" data-soffset="0">Home</a></li>
-      </ul>
-    </div>
-</header>
+<!-- Mobile Only Navigation - 2 types each for small device screens -->
+<!-- Sliding Navigation : starts -->
+<nav class="menu visible-xs" id="sm">
+  <div class="sm-wrap">
+    <h1 class="sm-logo">next</h1>
+    <i class="icon-remove menu-close"></i>
+    <a href="http://www.designova.net/next/index.html">Back to Home</a>
+  </div>
+  <!-- Navigation Trigger Button -->
+  <div id="sm-trigger"></div>
+</nav>
+<!-- Sliding Navigation : ends -->
 
-<div id="sidebar-nav" class="sq-side-menu hidden-xs show-nav">
+
+
+
+
+<section id="mastwrap" class="sliding">
+
+
+  <div id="sidebar-nav" class="sq-side-menu hidden-xs show-nav">
     <ul>
       <!-- begin home -->
       <li class="next-bg-one">
-        <a id="home-link" href="index.html" data-soffset="0">
+        <a id="home-link" href="http://www.designova.net/next/index.html" data-soffset="0">
           <div class="first">
             <div class="arrow-right"></div>
             <div class="content"><img alt="" title="" src="images/icons/00.png"/></div>
@@ -81,9 +95,9 @@
         </a>
       </li>
       <!-- end home -->
-      <!-- begin blog -->
+       <!-- begin blog -->
       <li class="next-bg-three">
-         <a class="scroll-link" id="featured-project-link" href="#featured-project" data-soffset="0">
+         <a class="scroll-link" id="featured-project-link" href="single-project.html#featured-project" data-soffset="0">
           <div class="first">
             <div class="arrow-right"></div>
             <div class="content"><img alt="" title="" src="images/icons/02.png"/></div>
@@ -104,11 +118,7 @@
 
 <div id="logo" class="hidden-xs"><img alt="" title="" src="images/logo.png"/></div>
 
-
-<!-- HEADER : STARTS -->
-
-
-
+ 
 
 
 
@@ -136,14 +146,14 @@
 
         <div class="row add-top">
           <article class="col-md-12 text-left">
-            <img class="img-responsive" src="images/projects/01.png"/>
+            <img alt="" title="" class="img-responsive" src="images/projects/01.png"/>
           </article>
         </div>
 
          <div class="row add-top-half">
           <article class="col-md-12 text-left">
             <p class="next-col-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique ultrices semper. Integer venenatis erat at sodales pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique ultrices semper. Integer venenatis erat at sodales pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique ultrices semper. Integer venenatis erat at sodales pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique ultrices semper. Integer venenatis erat at sodales pharetra.</p>
-          <a class="btn btn-next add-top" href="#">Visit Website</a>
+          <a class="btn btn-next add-top" href="single-project.html#">Visit Website</a>
           </article>
         </div>
 
@@ -183,14 +193,14 @@
 
         <div class="row add-top">
           <article class="col-md-12 text-left">
-            <img class="img-responsive" src="images/projects/02.png"/>
+            <img alt="" title="" class="img-responsive" src="images/projects/02.png"/>
           </article>
         </div>
 
          <div class="row add-top-half">
           <article class="col-md-12 text-left">
             <p class="next-col-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique ultrices semper. Integer venenatis erat at sodales pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique ultrices semper. Integer venenatis erat at sodales pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique ultrices semper. Integer venenatis erat at sodales pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique ultrices semper. Integer venenatis erat at sodales pharetra.</p>
-          <a class="btn btn-next add-top" href="#">Download Preview</a>
+          <a class="btn btn-next add-top" href="single-project.html#">Download Preview</a>
           </article>
         </div>
 
@@ -229,8 +239,8 @@
                 </article>
                 <article class="col-md-6 foot-icons text-right">
                   <ul class="clearfix text-right">
-                    <li><a href="#"><img alt="" title="" src="images/footer/01.png"/></a></li>
-                    <li><a href="#"><img alt="" title="" src="images/footer/02.png"/></a></li>
+                    <li><a href="single-project.html#"><img alt="" title="" src="images/footer/01.png"/></a></li>
+                    <li><a href="single-project.html#"><img alt="" title="" src="images/footer/02.png"/></a></li>
                   </ul>
                 </article>
         </div>
@@ -240,6 +250,9 @@
 </section>
 </footer>
 
+
+</section>
+<!-- mastwrap : ends -->
 
 <script src="javascripts/jquery-1.9.1.min.js" type="text/javascript"></script>
 <script src="javascripts/jquery.easing.1.3.js" type="text/javascript"></script>
@@ -261,8 +274,10 @@
 <script src="javascripts/jquery.flickr.js"></script>
 <script src="javascripts/boxgrid.js"></script>
 <script src="javascripts/retina.js"></script>
+<script src="javascripts/preloader.js"></script>
 <script src="javascripts/effects.js"></script>
 <script src="javascripts/scroll.js"></script>
+<script src="javascripts/slidingmenu.js"></script>
 <script src="javascripts/script.js"></script>
 
 
