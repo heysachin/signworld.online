@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="js no-touch js csstransitions js csstransitions js">
 <head>
-<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Sign World - Kerala's No.1 Advertising Agency</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="next by Designova - An easy to use Personal Portfolio - Retina Ready and Responsive HTML5 theme">
@@ -31,11 +31,10 @@
 <link href="stylesheets/effects.css" rel="stylesheet">
 <link href="stylesheets/jquery.easy-pie-chart.css" rel="stylesheet">
 <link href="stylesheets/sidemenu.css" rel="stylesheet">
-<link href="stylesheets/intro.css" rel="stylesheet" />
+<link href="stylesheets/intro.css" rel="stylesheet">
+<link href="stylesheets/slidingmenu.css" rel="stylesheet">
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
-
-<link href="stylesheets/metro-panel.css" rel="stylesheet">
 <link href="stylesheets/style.css" rel="stylesheet">
 <link type="text/css" media="screen" rel="stylesheet" href="stylesheets/awwwards.css">
 
@@ -70,15 +69,9 @@
 <!-- Sliding Navigation : starts -->
 <nav class="menu visible-xs" id="sm">
   <div class="sm-wrap">
-    <h1 class="sm-logo">next</h1>
+    <h1 class="sm-logo"><img alt="" title="" src="images/logosmall.png"/></h1>
     <i class="icon-remove menu-close"></i>
-    <a class="scroll-link" data-soffset="0" href="#intro">Home</a>
-    <a class="scroll-link" data-soffset="0" href="#about">About</a>
-    <a class="scroll-link" data-soffset="0" href="#portfolio">Portfolio</a>
-    <a class="scroll-link" data-soffset="0" href="#services">Services</a>
-    <a class="scroll-link" data-soffset="0" href="#contact">Contact</a>
-    <a href="#">Profile Page</a>
-    <a href="#">Project Page</a>
+    <a href="#">Back to Home</a>
   </div>
   <!-- Navigation Trigger Button -->
   <div id="sm-trigger"></div>
@@ -87,15 +80,14 @@
 
 <section id="mastwrap" class="sliding">
  
-
-<div id="sidebar-nav" class="sq-side-menu hidden-xs">
+<div id="sidebar-nav" class="sq-side-menu hidden-xs show-nav">
     <ul>
-      <!-- Starting : Nav Block -->
-      <li class="next-bg-one" style="height: 125.714px;">
-        <a class="scroll-link sq-active" id="home-link" href="#home" data-soffset="0">
+      <!-- begin home -->
+      <li class="next-bg-one" style="height: 879px;">
+        <a class="scroll-link" href="#" data-soffset="0">
           <div class="first">
             <div class="arrow-right"></div>
-            <div class="content"><img alt="" title="" src="images/icons/00@2x.png" width="60" height="60"></div>
+            <div class="content"><img alt="" title="" src="images/icons/00.png" width="60" height="60"></div>
           </div>
           <div class="second">
             <div class="arrow-left"></div>
@@ -103,98 +95,8 @@
           </div>
         </a>
       </li>
-      <!-- Ending : Nav Block -->
-      
-      <!-- Starting : Nav Block -->
-      <li class="next-bg-two" style="height: 125.714px;">
-         <a class="scroll-link" id="about-link" href="#about" data-soffset="0">
-          <div class="first">
-            <div class="arrow-right"></div>
-            <div class="content"><img alt="" title="" src="images/icons/01@2x.png" width="60" height="60"></div>
-          </div>
-          <div class="second">
-            <div class="arrow-left"></div>
-            <div class="content">About</div>
-          </div>
-        </a>
-      </li>
-     <!-- Ending : Nav Block -->
-      
-      <!-- Starting : Nav Block -->
-      <li class="next-bg-four" style="height: 125.714px;">
-        <a class="scroll-link" id="portfolio-link" href="#portfolio" data-soffset="0">
-          <div class="first">
-            <div class="arrow-right"></div>
-            <div class="content"><img alt="" title="" src="images/icons/06@2x.png" width="60" height="60"></div>
-          </div>
-          <div class="second">
-            <div class="arrow-left"></div>
-            <div class="content">Portfolio</div>
-          </div>
-        </a>
-      </li>
-      <!-- Ending : Nav Block -->
-      
-      <!-- Starting : Nav Block -->
-      <li class="next-bg-three" style="height: 125.714px;">
-        <a class="scroll-link" id="services-link" href="#services" data-soffset="0">
-          <div class="first">
-            <div class="arrow-right"></div>
-            <div class="content"><img alt="" title="" src="images/icons/03@2x.png" width="60" height="60"></div>
-          </div>
-          <div class="second">
-            <div class="arrow-left"></div>
-            <div class="content">Services</div>
-          </div>
-        </a>
-      </li>
-      <!-- Ending : Nav Block -->
-      
-      <!-- Starting : Nav Block -->
-      <li class="next-bg-six" style="height: 125.714px;">
-       <a class="scroll-link" id="contact-link" href="#contact" data-soffset="0">
-          <div class="first">
-            <div class="arrow-right"></div>
-            <div class="content"><img alt="" title="" src="images/icons/05@2x.png" width="60" height="60"></div>
-          </div>
-          <div class="second">
-            <div class="arrow-left"></div>
-            <div class="content">Contact</div>
-          </div>
-        </a>
-      </li>
-      <!-- Ending : Nav Block -->
-      
-      <!-- Starting : Nav Block -->
-      <li class="next-bg-five" style="height: 125.714px;">
-        <a id="project-link" href="#" data-soffset="0">
-          <div class="first">
-            <div class="arrow-right"></div>
-            <div class="content"><img alt="" title="" src="images/icons/02@2x.png" width="60" height="60"></div>
-          </div>
-          <div class="second">
-            <div class="arrow-left"></div>
-            <div class="content">Project</div>
-          </div>
-        </a>
-      </li>
-      <!-- Ending : Nav Block -->
-      
-      <!-- Starting : Nav Block -->
-      <li class="next-bg-eight" style="height: 125.714px;">
-        <a id="profile-link" href="#" data-soffset="0">
-          <div class="first">
-            <div class="arrow-right"></div>
-            <div class="content"><img alt="" title="" src="images/icons/04@2x.png" width="60" height="60"></div>
-          </div>
-          <div class="second">
-            <div class="arrow-left"></div>
-            <div class="content">Profile</div>
-          </div>
-        </a>
-      </li>
-      <!-- Ending : Nav Block -->
-     
+      <!-- end home -->
+
     </ul>
     <!-- end sq-side-menu ul -->
   </div>
@@ -208,12 +110,12 @@
 
 
 <!-- HOME : STARTS -->
-<section id="welcome" data-stellar-background-ratio="1.7" class="clearfix home2">
+<section id="welcome" data-stellar-background-ratio="1.7" class="clearfix home2" style="min-height: 879px; background-position: 50% 35px;">
   <section class="container">
 
         <div class="row">
         <article class="col-md-12">
-            <h1>Sorry Page Under Construction!!!</h1>
+            <h1 style="margin-top: 219.75px;">Sorry Page Under Construction!!!</h1>
             <h3>Thanks For Visiting!</h3>
             <div class="ticker-wrap">
                     <div id="news_ticker">
@@ -290,6 +192,7 @@
 <script src="javascripts/retina.js"></script>
 <script src="javascripts/effects.js"></script>
 <script src="javascripts/scroll.js"></script>
+<script src="javascripts/slidingmenu.js"></script>
 <script src="javascripts/script.js"></script>
 
 
