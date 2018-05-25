@@ -46,7 +46,7 @@ $(function ($) {
   $('#flickr').jflickrfeed({
     limit: 12, //Number of images to be displayed
     qstrings: {
-      id: '36587311@N08'//Change this to any Flickr Set ID as you prefer.
+      id: '144519547@N08'//Change this to any Flickr Set ID as you prefer.
     },
     itemTemplate: '<div class="flickr-thumb flickr-photo"><a href="{{image_b}}" target="_blank"><img class="img-responsive" src="{{image_m}}" alt="{{title}}" /></a></div>'
   });
